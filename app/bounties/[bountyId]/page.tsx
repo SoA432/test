@@ -1,6 +1,15 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 const Bounty = ({ searchParams }: any) => {
+
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    console.log('init');
+    setData(Math.random());
+  }, [])
   return (
     <>
       <div
@@ -10,8 +19,8 @@ const Bounty = ({ searchParams }: any) => {
           height: "100%",
         }}
       >
-        fsafsafs
-      </div>
+        fsafsafs {data}
+      </div> 
     </>
   );
 };
