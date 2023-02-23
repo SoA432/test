@@ -13,13 +13,18 @@ export default function Home() {
   }
 
   const handleRoute2 = () => {
+    router.push('bounties')
+  }
+
+  const handleRoute3 = () => {
     router.push('bounties/fsafsafsa')
   }
   return (
     <main className={styles.main}>
       <SearchBar/>
-      <div onClick={handleRoute1}>route my bounties</div>
-      <div onClick={handleRoute2}>route random</div>
+      <div onClick={handleRoute1}> /mybounties </div>
+      <div onClick={handleRoute2}> /bounties </div>
+      <div onClick={handleRoute3}> /bounties/fsafsafsa </div>
     </main>
   )
 }
