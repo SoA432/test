@@ -26,18 +26,18 @@ const SearchBar = ({ }: SearchBarProps) => {
   const inputRef: React.RefObject<HTMLInputElement> = React.createRef();
   // const [bountiesFilters, setBountiesFilters] =
   //   useRecoilState(bountiesFiltersState);
-  const [searchInput, setSearchInput] = useState<string>("");
+  const [searchInput, setSearchInput] = useState<string>(search || '');
   const params = new URLSearchParams(searchParams.toString());
 
-  useEffect(() => {
-    if (search && search !== searchInput) {
-      setSearchInput(search as string);
-      // setBountiesFilters({
-      //   ...bountiesFilters,
-      //   search: search as string,
-      // });
-    }
-  }, [search]);
+  // useEffect(() => {
+  //   if (search && search !== searchInput) {
+  //     setSearchInput(search as string);
+  //     // setBountiesFilters({
+  //     //   ...bountiesFilters,
+  //     //   search: search as string,
+  //     // });
+  //   }
+  // }, []);
 
   useEffect(() => {
     if (search === searchInput) {
