@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Bounty = ({ searchParams }: any) => {
 
-  const [data, setData] = useState();
+  const [data, setData] = useState<any>();
 
   useEffect(() => {
     console.log('init');
