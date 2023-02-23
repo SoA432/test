@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './globals.css'
 
 export default function RootLayout({
@@ -5,7 +6,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  useEffect(() => {
+    console.log('layout init');
+  }, [])
   return (
+
     <html lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
