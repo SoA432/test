@@ -1,37 +1,37 @@
 "use client";
 
-import { useRouter, usePathname } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
-import {
-  bountyPayloadState,
-  navDrawerProfileState,
-  navDrawerUserState,
-  openDrawerState,
-  userInfoState,
-} from "../../../atoms/atoms";
-import { BountyData, BountyPayload, BountyApplication } from "@interfaces";
-import bountiesService from "services/bounties";
-import ShareIcon from "src/assets/ShareIcon.svg";
-import FlagIcon from "src/assets/FlagIcon.svg";
-import FavouriteIcon from "src/assets/FavouriteIcon.svg";
-import FavouriteIconActive from "src/assets/FavouriteIconActive.svg";
-// MUI
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { LoadingSpinner } from "components/LoadingSpinner";
-import { Box, Divider } from "@mui/material";
-import { useTranslation } from "react-i18next";
-import { useSnackbar } from "notistack";
-import Head from "next/head";
-import Avatar from "components/Avatar";
-import { BountyStates } from "enums/bounty-states.enum";
-import NavBarWithBackButton from "@components/NavBarWithBackButton";
+// import { useRouter, usePathname } from "next/navigation";
+// import Image from "next/image";
+// import Link from "next/link";
+// import { useEffect, useState } from "react";
+// import { useRecoilState } from "recoil";
+// import {
+//   bountyPayloadState,
+//   navDrawerProfileState,
+//   navDrawerUserState,
+//   openDrawerState,
+//   userInfoState,
+// } from "../../../atoms/atoms";
+// import { BountyData, BountyPayload, BountyApplication } from "@interfaces";
+// import bountiesService from "services/bounties";
+// import ShareIcon from "src/assets/ShareIcon.svg";
+// import FlagIcon from "src/assets/FlagIcon.svg";
+// import FavouriteIcon from "src/assets/FavouriteIcon.svg";
+// import FavouriteIconActive from "src/assets/FavouriteIconActive.svg";
+// // MUI
+// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import IconButton from "@mui/material/IconButton";
+// import Button from "@mui/material/Button";
+// import Typography from "@mui/material/Typography";
+// import { LoadingSpinner } from "components/LoadingSpinner";
+// import { Box, Divider } from "@mui/material";
+// import { useTranslation } from "react-i18next";
+// import { useSnackbar } from "notistack";
+// import Head from "next/head";
+// import Avatar from "components/Avatar";
+// import { BountyStates } from "enums/bounty-states.enum";
+// import NavBarWithBackButton from "@components/NavBarWithBackButton";
 
 const Bounty = ({ searchParams }: any) => {
   // const { t } = useTranslation();
@@ -42,6 +42,11 @@ const Bounty = ({ searchParams }: any) => {
   // const [bountyInfo, setBountyInfo] = useState<BountyData>();
 
   // const [openDrawer, setOpenDrawer] = useRecoilState(openDrawerState);
+
+  // useEffect(() => {
+  //   console.log('openDrawer', openDrawer);
+  // }, [])
+
   // const [userProfile, setUserProfile] = useRecoilState(userInfoState);
   // const [navDrawerUser, setNavDrawerUser] = useRecoilState(navDrawerUserState);
   // const { enqueueSnackbar, closeSnackbar } = useSnackbar();

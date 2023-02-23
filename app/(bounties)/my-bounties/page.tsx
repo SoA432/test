@@ -1,27 +1,34 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import bountiesService from "../../../services/bounties";
-import { BountyStates } from "enums/bounty-states.enum";
-import { BountyStatesOverviw } from "@interfaces";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import Divider from "@mui/material/Divider";
-import { LoadingSpinner } from "components/LoadingSpinner";
-import Head from "next/head";
-import { BountyApplicationStates } from "enums/bounty-application-states.enum";
-import Collapse from "@mui/material/Collapse";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { Box } from "@mui/material";
-import Link from "next/link";
-import NavBarWithBackButton from '@components/NavBarWithBackButton';
+// import { useRouter } from "next/navigation";
+// import { useEffect, useState } from "react";
+// import bountiesService from "../../../services/bounties";
+// import { BountyStates } from "enums/bounty-states.enum";
+// import { BountyStatesOverviw } from "@interfaces";
+// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+// import Typography from "@mui/material/Typography";
+// import IconButton from "@mui/material/IconButton";
+// import Divider from "@mui/material/Divider";
+// import { LoadingSpinner } from "components/LoadingSpinner";
+// import Head from "next/head";
+// import { BountyApplicationStates } from "enums/bounty-application-states.enum";
+// import Collapse from "@mui/material/Collapse";
+// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+// import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+// import { Box } from "@mui/material";
+// import Link from "next/link";
+// import NavBarWithBackButton from '@components/NavBarWithBackButton';
+// import { useRecoilState } from "recoil";
+// import { openDrawerState } from "@atoms/atoms";
 
 interface MyBountiesProps { }
 
 const MyBounties = ({ }: MyBountiesProps) => {
+  // const [openDrawer, setOpenDrawer] = useRecoilState(openDrawerState);
+
+  // useEffect(() => {
+  //   console.log('openDrawer', openDrawer);
+  // }, [])
   // const router = useRouter();
   // const [showLoading, setShowLoading] = useState<boolean>(false);
   // const [openedSections, setOpenedSections] = useState<string[]>([]);
