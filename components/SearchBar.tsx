@@ -40,6 +40,9 @@ const SearchBar = ({ }: SearchBarProps) => {
   }, [search]);
 
   useEffect(() => {
+    if (search === searchInput) {
+      return;
+    }
     if (searchInput) {
       params.delete("search");
       params.append("search", searchInput);
