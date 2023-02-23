@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <SearchBar/>
-      <div onClick={handleRoute1}> /mybounties </div>
-      <div onClick={handleRoute2}> /bounties </div>
-      <div onClick={handleRoute3}> /bounties/fsafsafsa </div>
+      <div onClick={handleRoute1}> /mybounties - hard navigation</div>
+      <div onClick={handleRoute2}> /bounties - hard navigation </div>
+      <div onClick={handleRoute3}> /bounties/fsafsafsa  - soft navigation</div>
     </main>
   )
 }
