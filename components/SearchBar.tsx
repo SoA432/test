@@ -46,11 +46,18 @@ const SearchBar = ({ }: SearchBarProps) => {
     if (searchInput) {
       params.delete("search");
       params.append("search", searchInput);
+      console.log('params.values?.length', params.toString().length);
+      if (!params.toString().length) {
+        return
+      }
       router.push(`${pathname}?${params.toString()}`);
     }
 
     if (searchInput === "") {
       params.delete("search");
+      if (!params.toString().length) {
+        return
+      }
       router.push(`${pathname}?${params.toString()}`);
     }
   }, [searchInput]);
