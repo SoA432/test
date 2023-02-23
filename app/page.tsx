@@ -9,7 +9,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleRoute1 = () => {
-    router.push('my-bounties')
+    router.push('mybounties')
   }
 
   const handleRoute2 = () => {
