@@ -13,7 +13,7 @@ export default function Home() {
   }
 
   const handleRoute2 = () => {
-    router.push('fsafsafsa')
+    router.push('bounties/fsafsafsa')
   }
   return (
     <main className={styles.main}>
