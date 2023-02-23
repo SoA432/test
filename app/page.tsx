@@ -1,4 +1,5 @@
 "use client";
+import SearchBar from '@components/SearchBar';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import styles from './page.module.css'
@@ -16,6 +17,7 @@ export default function Home() {
   }
   return (
     <main className={styles.main}>
+      <SearchBar/>
       <div onClick={handleRoute1}>route my bounties</div>
       <div onClick={handleRoute2}>route random</div>
     </main>
