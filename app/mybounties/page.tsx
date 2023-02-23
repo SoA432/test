@@ -1,14 +1,20 @@
 "use client";
 
-interface MyBountiesProps { }
-
-const MyBounties = ({ }: MyBountiesProps) => {
-  
+const MyBounties = ({ searchParams }: any) => {
   return (
     <>
-      <div>My bounties</div>
+      <div
+        style={{
+          position: "relative",
+          padding: "1rem",
+          height: "100%",
+        }}
+      >
+        fsafsafs
+      </div>
     </>
   );
 };
 
 export default MyBounties;
+
